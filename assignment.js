@@ -1,6 +1,10 @@
 //put the github link of the repository of this project
 // function kilometerToMeter : 1 parameter, input number, output number
 function kilometerToMeter(km){
+    //input validation (this portion is for assignment's bonus work)
+    if(isNaN(km) || km < 0){
+        return "Invalid input, please try again ";
+    }
     // 1 kilometer == 1000 meter
     var meter = km * 1000;
     return meter;
@@ -8,6 +12,14 @@ function kilometerToMeter(km){
 
 // test for kilometerToMeter()
 // console.log(kilometerToMeter(2)); // return 2000
+// console.log(kilometerToMeter(0)); // return 0
+// console.log(kilometerToMeter()); // return try again
+// console.log(kilometerToMeter(-4)); // return try again
+// console.log(kilometerToMeter('a')); // return try again
+// console.log(kilometerToMeter(.3)); // return 300
+// console.log(kilometerToMeter(null)); // return 0
+// console.log(kilometerToMeter(Infinity)); // return Infinity
+// console.log(kilometerToMeter(2/0)); // return Infinity
 
 // function budgetCalculator : 3 parameters, input number, output number
 
@@ -65,7 +77,7 @@ function megaFriend(nameArray){
     var arrLength =  nameArray.length;
     var i, element;
 
-    //action
+    //get the largestName
     for(i = 0; i < arrLength; i++){
         element = nameArray[i];
         if(element.length > largestName.length){
@@ -78,13 +90,13 @@ function megaFriend(nameArray){
 }
 
 // test for megaFriend()
-arr1 = ['rahim','karim','jodu','shefali','jonaki','donaldTrump'];
-arr2 = ['rahim','karim','jodu','shefali','jonaki','donaldTrump','kamala haris'];
-arr3 = ['rahim','karim','jodu','shefali','jonaki','donaldTrump','                     ','kamala haris'];
-arr4 = [];
-arr5 = ['karim'];
-console.log(megaFriend(arr1)); //donaldTrump
-console.log(megaFriend(arr2)); //kamala haris
-console.log(megaFriend(arr3)); //empty data
-console.log(megaFriend(arr4)); //empty data
-console.log(megaFriend(arr5)); //empty data
+// arr1 = ['rahim','karim','jodu','shefali','jonaki','donaldTrump'];
+// arr2 = ['rahim','karim','jodu','shefali','jonaki','donaldTrump','kamala haris'];
+// arr3 = ['rahim','karim','jodu','shefali','jonaki','donaldTrump','                     ','kamala haris'];
+// arr4 = [];
+// arr5 = ['karim'];
+// console.log(megaFriend(arr1)); //donaldTrump
+// console.log(megaFriend(arr2)); //kamala haris
+// console.log(megaFriend(arr3)); //empty data
+// console.log(megaFriend(arr4)); //empty data
+// console.log(megaFriend(arr5)); //empty data
