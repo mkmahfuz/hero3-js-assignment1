@@ -24,6 +24,18 @@ function kilometerToMeter(km){
 // function budgetCalculator : 3 parameters, input number, output number
 
 function budgetCalculator(watch,phone,laptop){
+
+    //input validation (this portion is for assignment's bonus work)    
+    if(isNaN(watch) || watch < 0){
+        return "Invalid watch unit, please try again. ";
+    }
+    if(isNaN(phone) || phone < 0){
+        return "Invalid phone unit, please try again. ";
+    }
+    if(isNaN(laptop) || laptop < 0){
+        return "Invalid laptop unit, please try again. ";
+    } 
+
     // variable initialization
     const watchPrice = 50, phonePrice = 100, laptopPrice = 500;
 
@@ -39,6 +51,12 @@ function budgetCalculator(watch,phone,laptop){
 // console.log(budgetCalculator(1,1,1)); //return 650
 // console.log(budgetCalculator(0,1,0)); //return 100
 // console.log(budgetCalculator(0,0,0)); //return 0
+// console.log(budgetCalculator(1,0,1)); //return 550
+// console.log(budgetCalculator(-1,0,1)); //return invalid watch
+// console.log(budgetCalculator(null,1,1)); //return 600
+// console.log(budgetCalculator(1,1)); //return invalid laptop unit
+// console.log(budgetCalculator(1,1,1,1)); //return 650
+// console.log(budgetCalculator()); //return invalid watch
 
 // function hotelCost : 1 parameter, input number, output number
 
