@@ -21,6 +21,7 @@ function kilometerToMeter(km){
 // console.log(kilometerToMeter(null)); // return 0
 // console.log(kilometerToMeter(Infinity)); // return Infinity
 // console.log(kilometerToMeter(2/0)); // return Infinity
+// console.log(kilometerToMeter('')); // return 0
 
 // function budgetCalculator : 3 parameters, input number, output number
 
@@ -65,6 +66,7 @@ function budgetCalculator(watch,phone,laptop){
 // console.log(budgetCalculator()); //return invalid watch
 // console.log(budgetCalculator(0,0,.1)); //return invalid laptop unit
 // console.log(budgetCalculator(1,1.4,1)); //return invalid phone unit
+// console.log(budgetCalculator('','','')); //return 0
 
 // function hotelCost : 1 parameter, input number, output number
 
@@ -108,6 +110,8 @@ function hotelCost(days){
 // console.log(hotelCost('q')); //invalid input
 // console.log(hotelCost(.2)); //100
 // console.log(hotelCost()); //invalid input
+// console.log(hotelCost(null)); //0
+// console.log(hotelCost('')); //0
 
 // function megaFriend : 1 parameter, input array, output string
 
